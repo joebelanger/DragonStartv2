@@ -17,6 +17,7 @@ public class Dragon
     private int height;
     private Color c;
     private String attackType;
+    private String textBox;
     
 
     /**
@@ -28,15 +29,17 @@ public class Dragon
         x = 50;
         y = 50;
         size = 1;
-        c = Color.RED; // INS comment here.
+        c = Color.BLUE; // INS comment here.
         attackType = "Fire";
+        textBox = "Hello";
     }
-    public Dragon(int x,int y, int size, Color c, String attackType){
+    public Dragon(int x,int y, int size, Color c, String attackType, String textBox){
         this.x = x;
         this.y = y;
         this.size = size;
         this.c = c; // You saw nothing.
         this.attackType = attackType;
+        this.textBox = textBox;
     }
         
     
@@ -61,10 +64,10 @@ public class Dragon
     }
     private void drawWater(Graphics g)
     {
-        g.setColor(Color.PINK);
+        g.setColor(Color.BLUE);
         for(int i = 1; i <= size *5; i++)
         {
-             g.fillOval(x + i * -10, y + 2 * 4, size * 25, size * 2 * 4);
+             g.fillOval(x + i * -20, y + 2 * 4, size * 25, size * 2 * 4);
         }
         
     }
@@ -75,6 +78,15 @@ public class Dragon
        drawFire(g);
        else if(attackType.equals ("Water"))
        drawWater(g);
+    }
+    public void textSpeech(Graphics g)
+    {
+        for(int i = 1; i <= size *5; i++)
+        {
+            
+            g.drawRect(x + i * -10, y + 3 * -8, size * 25, size * 2 * 4);
+            
+        }
     }
     
     public String toString(){
