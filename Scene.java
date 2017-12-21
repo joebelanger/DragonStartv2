@@ -26,9 +26,9 @@ public class Scene
         y = 60;
         this.width = width;
         this.height = height;
-        horizionColor = Color.CYAN;
-        groundColor = Color.GREEN;
-        sunColor = Color.YELLOW;
+        this.horizionColor = Color.CYAN;
+        this.groundColor = Color.GREEN;
+        this.sunColor = Color.YELLOW;
     }
 
     

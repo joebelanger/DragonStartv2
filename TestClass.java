@@ -1,5 +1,6 @@
  
 
+import java.util.ArrayList;
 import java.awt.*;
 /**
  * Write a description of class TestClass here.
@@ -13,18 +14,12 @@ public class TestClass
        DrawingPanel panel = new DrawingPanel(800,800);
        Graphics g = panel.getGraphics();
        
-       vals.add(new Integer(31)); // List now: 31 
-       vals.add(new Integer(41)); // List now: 31 41
-       
-       x = vals.get(0);  // Assigns 31 to x
-       x = vals.get(1);  // Assigns 41
-       x = vals.get(2);  // Assigns 59
-       x = vals.get(3);  // Error: No such element
-       
-       // List originally: 31 41 59 
-       vals.set(1, new Integer(119));  // List now 31 119 59
-       
-       Scene day = new Scene();
+        ArrayList<Integer> bragon = new ArrayList<Integer>(); 
+        int currBragon = bragon.get(4);
+        for()
+        {
+            
+        }
        
        Dragon jen = new Dragon();
        jen.dragonElement(g);
