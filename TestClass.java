@@ -14,11 +14,11 @@ public class TestClass
        DrawingPanel panel = new DrawingPanel(800,800);
        Graphics g = panel.getGraphics();
        
-        ArrayList<Integer> bragon = new ArrayList<Integer>(); 
-        int currBragon = bragon.get(4);
-        for()
+        ArrayList<Dragon> bragon = new ArrayList<dragon>(); 
+        int num;
+        do()
         {
-            
+            System.out.print()
         }
        
        Dragon jen = new Dragon();
