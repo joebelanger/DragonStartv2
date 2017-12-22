@@ -1,5 +1,5 @@
  
-
+import java.util.Scanner;
 import java.util.ArrayList;
 import java.awt.*;
 /**
@@ -14,12 +14,23 @@ public class TestClass
        DrawingPanel panel = new DrawingPanel(800,800);
        Graphics g = panel.getGraphics();
        
-        ArrayList<Dragon> bragon = new ArrayList<dragon>(); 
+        ArrayList<Dragon> bragon = new ArrayList<Dragon>(); 
         int num;
-        do()
+        do
         {
-            System.out.print()
+            System.out.print("how many :");
+            num = input.nextInt();
         }
+        while(num <= 6);
+        
+          for(int i = 1; i <= num; i++){
+              Dragon temp = new Dragon(90*i +25, 90*i = 50,1 , new Color(50*i, 50*i, 50*i), "#" + i);
+              dragon.add(temp);
+          }
+          for(int i = 0; i < dragon.size(); i++){
+             dragon.get(i).drawdragon(g);
+          }
+        
        
        Dragon jen = new Dragon();
        jen.dragonElement(g);
